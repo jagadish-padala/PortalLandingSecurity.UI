@@ -23,6 +23,7 @@ using SecurityLandingPortal.Drivers;
 using SecurityLandingPortal.TestPage;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Logging;
 using PortalLandingSecurity.WorkFlow;
+using OpenQA.Selenium;
 
 namespace Security_Landing_Advisory
 {
@@ -45,6 +46,7 @@ namespace Security_Landing_Advisory
         }
 
         #region variables
+        IWebDriver webDriver;
         Security_Landing_Advisory_Workflow _objSecurity_Landing_Advisory_Workflow;
         public const string RepositoryName = @"\\Adepttest056.aus.amer.dell.com\AutomationSharedData\\Contents_TestData\\SecurityLandingPage\\PortalLandingSecurity.xml";
        
@@ -55,7 +57,7 @@ namespace Security_Landing_Advisory
         [TestInitialize]
         public void TestInitialize()
         {
-            
+            webDriver = TestWebDriver;
             _objSecurity_Landing_Advisory_Workflow = new Security_Landing_Advisory_Workflow(TestWebDriver);
 
         }
@@ -63,8 +65,8 @@ namespace Security_Landing_Advisory
         [TestCleanup]
         public void Testleanup()
         {
-            if (TestContext.CurrentTestOutcome != UnitTestOutcome.Passed)
-                WebDriverUtility.GetBrowserScreenshot(TestWebDriver, TestContext);
+            //if (TestContext.CurrentTestOutcome != UnitTestOutcome.Passed)
+            //    WebDriverUtility.GetBrowserScreenshot(TestWebDriver, TestContext);
 
             base.BaseTestCleanup();
         }
@@ -83,8 +85,8 @@ namespace Security_Landing_Advisory
         
         public void TC_7801156_Validate_Security_Landing_page_unauthenticated_view()
         {
-            WebDriverUtility.NavigateUrl(TestWebDriver, TestContext.DataRow["URL"].ToString());
-            WebDriverUtility.WaitForPageToLoad(TestWebDriver);
+            WebDriverUtility.NavigateUrl(webDriver, TestContext.DataRow["URL"].ToString());
+            WebDriverUtility.WaitForPageToLoad(webDriver);
             System.Threading.Thread.Sleep(10000);
             Assert.IsTrue(_objSecurity_Landing_Advisory_Workflow.VerifyPageTitle(TestContext.DataRow["PageTitle"].ToString()), "Page title is missing");
             _objSecurity_Landing_Advisory_Workflow.ValidatePageContent(TestContext.DataRow["PageDate"].ToString(), TestContext.DataRow["PageMainHeader"].ToString(), TestContext.DataRow["PageSubHeader1"].ToString(), TestContext.DataRow["PageSubHeader2"].ToString());
