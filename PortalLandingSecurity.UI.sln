@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortalLandingSecurity.UI", "PortalLandingSecurity.UI\PortalLandingSecurity.UI.csproj", "{9550B2B7-D982-44B1-A8A7-ECDD347F6DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9550B2B7-D982-44B1-A8A7-ECDD347F6DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9550B2B7-D982-44B1-A8A7-ECDD347F6DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9550B2B7-D982-44B1-A8A7-ECDD347F6DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9550B2B7-D982-44B1-A8A7-ECDD347F6DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {633E0AB3-2085-4065-9AE1-70CE4032D4E0}
+	EndGlobalSection
+EndGlobal
