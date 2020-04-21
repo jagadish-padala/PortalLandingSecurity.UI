@@ -34,17 +34,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adept.Core, Version=4.6.1911.2501, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dell.Adept.Core.4.6.1911.2501\lib\net47\Adept.Core.dll</HintPath>
+    <Reference Include="Adept.Core, Version=4.0.19.619, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dell.Adept.Core.4.0.19.619\lib\net47\Adept.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Adept.Testing.DataGenerators, Version=4.6.1911.2501, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dell.Adept.Testing.DataGenerators.4.6.1911.2501\lib\net47\Adept.Testing.DataGenerators.dll</HintPath>
+    <Reference Include="Adept.Testing.DataGenerators, Version=4.0.19.619, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dell.Adept.Testing.DataGenerators.4.0.19.619\lib\net47\Adept.Testing.DataGenerators.dll</HintPath>
     </Reference>
-    <Reference Include="Adept.UI.Web, Version=4.6.1911.2501, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dell.Adept.UI.Web.4.6.1911.2501\lib\net47\Adept.UI.Web.dll</HintPath>
+    <Reference Include="Adept.UI.Web, Version=4.0.19.619, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dell.Adept.UI.Web.4.0.19.619\lib\net47\Adept.UI.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Adept.Web, Version=4.6.1911.2501, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dell.Adept.WebDriver.4.6.1911.2501\lib\net47\Adept.Web.dll</HintPath>
+    <Reference Include="Adept.Web, Version=4.0.19.619, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dell.Adept.WebDriver.4.0.19.619\lib\net47\Adept.Web.dll</HintPath>
     </Reference>
     <Reference Include="FluentAssertions, Version=5.9.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentAssertions.5.9.0\lib\net47\FluentAssertions.dll</HintPath>
