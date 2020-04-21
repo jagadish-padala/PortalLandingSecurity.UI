@@ -120,8 +120,8 @@ namespace Security_Landing_Advisory
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", RepositoryName, "TestData", DataAccessMethod.Sequential)]
         public void TC_7801238_Validate_Security_Landing_page_authenticated_view()
         {
-            WebDriverUtility.NavigateUrl(TestWebDriver, TestContext.DataRow["URL"].ToString());
-            WebDriverUtility.WaitForPageToLoad(TestWebDriver);
+            WebDriverUtility.NavigateUrl(webDriver, TestContext.DataRow["URL"].ToString());
+            WebDriverUtility.WaitForPageToLoad(webDriver);
             System.Threading.Thread.Sleep(10000);
             _objSecurity_Landing_Advisory_Workflow.LoginToApplication(TestContext.DataRow["EmailId"].ToString(), TestContext.DataRow["Password"].ToString());
             Assert.IsTrue(_objSecurity_Landing_Advisory_Workflow.VerifyPageTitle(TestContext.DataRow["PageTitle"].ToString()), "Page title is missing");
